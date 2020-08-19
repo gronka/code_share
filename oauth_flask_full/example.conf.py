@@ -7,3 +7,11 @@ conf = {
     "logout_url": "https://oauth-site.com/autho/logout.html",
     "sjwt_secret": "yOuCaNnEvErCrAcKtHiS",
 }
+
+class Semit:
+    client_info_needs_update = 'client_info_needs_update'
+    connection_established = 'connection_established'
+    open_window = 'open_window'
+    sso_signin_successful = 'sso_signin_successful'
+    your_client_info = 'your_client_info'
+
