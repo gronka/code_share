@@ -1,0 +1,7 @@
+Authlib
+Flask
+flask-socketio
+gevent
+gevent-websocket
+pyjwt
+requests
