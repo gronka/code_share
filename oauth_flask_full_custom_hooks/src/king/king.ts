@@ -2,7 +2,8 @@ import { Configuration } from '../conf';
 import { AuthService } from '../services/auth';
 import { Sock } from '../services/sock';
 
-// king: master / (current year + 5)
+// King controls and coordinates incidents in the kingdom. He gives 
+// commands to Viceroys (usually services)
 export class King {
 	authService: AuthService;
 	conf: Configuration;
