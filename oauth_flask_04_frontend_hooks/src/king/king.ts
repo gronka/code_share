@@ -2,7 +2,7 @@ import { Configuration } from '../conf';
 import { AuthService } from '../services/auth';
 import { Sock } from '../services/sock';
 
-// king: master / (current year + 5)
+// king: rules and coordinates
 export class King {
 	authService: AuthService;
 	conf: Configuration;
