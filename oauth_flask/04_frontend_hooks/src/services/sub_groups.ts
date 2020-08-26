@@ -30,8 +30,12 @@ export class SubGroups {
 
 	broadcastUpdate(subName: string, newValue: any) {
 		console.log("updating hooks for group " + subName);
-		for (const [, subscriber] of Object.entries(this.groups[subName])) {
-			subscriber(newValue);
+		// NOTE: sometimes a broadcast can be sent before a component finishes
+		// rendering
+		if (subName in this.groups) {
+			for (const [, subscriber] of Object.entries(this.groups[subName])) {
+				subscriber(newValue);
+			}
 		}
 	}
 }

@@ -75,6 +75,10 @@ export class Sock {
 		});
 	}
 
+	get isConnected() {
+		return this.client.connected;
+	}
+
 	printDebug() {
 		console.log('emitting print_debug');
 		this.client.emit(Semit.printDebug, 'hey buddy');

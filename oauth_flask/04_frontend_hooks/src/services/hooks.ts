@@ -3,7 +3,7 @@ import { king } from '../globals';
 
 
 export function useIsSocketConnected(key: string) {
-	const [isConnected, setIsConnected] = React.useState(false);
+	const [isConnected, setIsConnected] = React.useState(king.sock.isConnected);
 
 	React.useEffect(() => {
 		function handleSocketChange(isConnected: boolean) {
@@ -20,7 +20,7 @@ export function useIsSocketConnected(key: string) {
 
 
 export function useIsSignedIn(key: string) {
-	const [isSignedIn, setIsSignedIn] = React.useState(false);
+	const [isSignedIn, setIsSignedIn] = React.useState(king.authService.isSignedIn);
 
 	React.useEffect(() => {
 		function handleAuthChange(isSignedIn: boolean) {
