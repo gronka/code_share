@@ -10,3 +10,7 @@ register with the SSO server. I registered /authorize/sso for my tests
 
 I'm using jwts to basically store the user session, but I did not implement any
 jwt health checks.
+
+## TODO
+When a user SSO session logs out automatically, how will our server be 
+notified? And how do we tell the frontend?
